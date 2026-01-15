@@ -1,0 +1,212 @@
+:root {
+            --pink: #f4b4c4;
+            --light-pink: #fde8ec;
+            --cream: #fffbe6;
+            --peach: #f5a287;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: repeating-conic-gradient(var(--light-pink) 0% 25%, white 0% 50%) 50% / 60px 60px;
+        }
+        
+        /* Header superior */
+        .top-header {
+            background-color: var(--cream);
+            padding: 10px 0;
+            border-bottom: 2px solid var(--pink);
+        }
+        
+        .top-header a {
+            color: var(--peach);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+        }
+        
+        .top-header i {
+            margin-right: 5px;
+        }
+        
+        /* Navegación principal */
+        .main-nav {
+            background-color: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .main-nav a {
+            color: var(--peach);
+            text-decoration: none;
+            margin: 0 25px;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        
+        .main-nav a:hover {
+            color: var(--pink);
+        }
+        
+        /* Logo central */
+        .logo-section {
+            background-color: var(--light-pink);
+            padding: 40px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .logo-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                linear-gradient(45deg, white 25%, transparent 25%),
+                linear-gradient(-45deg, white 25%, transparent 25%),
+                linear-gradient(45deg, transparent 75%, white 75%),
+                linear-gradient(-45deg, transparent 75%, white 75%);
+            background-size: 60px 60px;
+            background-position: 0 0, 0 30px, 30px -30px, -30px 0px;
+            pointer-events: none;
+            opacity: 0.3;
+        }
+        .logo-circle {
+            width: 200px;
+            height: 200px;
+            background-color: #fff9b8;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .logo-circle img {
+            width: 150px;
+            height: auto;
+        }
+        
+        .logo-text {
+            font-size: 48px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 20px;
+            font-family: 'Comic Sans MS', cursive;
+        }
+        
+        /* Sección de productos */
+        .products-section {
+            padding: 60px 0;
+            background-color: white;
+        }
+        
+        .product-circle {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            background-color: #fff;
+        }
+        
+        .product-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .product-label {
+            text-align: center;
+            color: var(--peach);
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+        
+        .ribbon {
+            width: 100px;
+            height: auto;
+            margin: 0 auto 10px;
+            display: block;
+        }
+        
+        /* Sección Tarté info */
+        .info-section {
+            padding: 60px 0;
+            background-color: white;
+        }
+        
+        .info-title {
+            font-size: 48px;
+            font-weight: bold;
+            color: var(--peach);
+            font-family: 'Comic Sans MS', cursive;
+            margin-bottom: 20px;
+        }
+        
+        .info-text {
+            color: var(--peach);
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        
+        /* Sección CTA */
+        .cta-section {
+            background-color: var(--cream);
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-text {
+            color: #8b6a4f;
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        
+        .cta-highlight {
+            color: var(--peach);
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        
+        .btn-info-custom {
+            background-color: var(--pink);
+            color: white;
+            border: none;
+            padding: 12px 40px;
+            border-radius: 25px;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .btn-info-custom:hover {
+            background-color: #e19dad;
+            color: white;
+        }
+        
+        .rolling-pin {
+            position: absolute;
+            right: 50px;
+            bottom: 30px;
+            width: 250px;
+            transform: rotate(-15deg);
+        }
+        
+        /* Placeholders para imágenes */
+        .placeholder-img {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+        }
