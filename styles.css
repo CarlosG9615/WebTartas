@@ -7,7 +7,7 @@
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: repeating-conic-gradient(var(--light-pink) 0% 25%, white 0% 50%) 50% / 60px 60px;
+            background: white;
         }
         
         /* Header superior */
@@ -81,6 +81,8 @@
             align-items: center;
             justify-content: center;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 10;
         }
         
         .logo-circle img {
@@ -100,6 +102,15 @@
         .products-section {
             padding: 60px 0;
             background-color: white;
+        }
+        
+        .products-section .row {
+            gap: 100px;
+            justify-content: flex-start;
+        }
+        
+        .products-section .col-md-3 {
+            margin-bottom: 40px;
         }
         
         .product-circle {
@@ -144,13 +155,41 @@
             font-weight: bold;
             color: var(--peach);
             font-family: 'Comic Sans MS', cursive;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .info-text-wrapper {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 350px;
+            height: 250px;
+            margin: 0 auto;
+            z-index: 1;
+        }
+        
+        .info-text-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--light-pink);
+            border-radius: 50%;
+            z-index: 0;
         }
         
         .info-text {
-            color: var(--peach);
-            font-size: 16px;
-            line-height: 1.8;
+            color: #c4738d;
+            font-size: 20px;
+            line-height: 1.6;
+            margin: 0;
+            padding: 30px;
+            position: relative;
+            z-index: 2;
+            text-align: center;
         }
         
         /* Sección CTA */

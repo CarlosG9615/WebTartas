@@ -45,73 +45,71 @@
             <div class="logo-circle">
                 <img class="rounded-circle" src="./images/logo.png" alt="Logotipo Tarté" style="width: 200px; height: auto;">
             </div>
-    </div>
-    
-    <!-- Sección de Productos -->
-    <div class="products-section">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                
-                <!-- Blueberry Cheesecake -->
-                <div class="col-md-3 text-center mb-4">
-                    <svg class="ribbon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20,30 Q30,10 40,30 Q50,50 30,60 Q10,50 20,30" fill="#c4738d"/>
-                        <path d="M60,30 Q70,10 80,30 Q90,50 70,60 Q50,50 60,30" fill="#c4738d"/>
-                        <rect x="35" y="45" width="30" height="40" fill="#a15971"/>
-                    </svg>
-                    <div class="product-label">blueberry<br>cheesecake</div>
-                    <div class="product-circle">
-                        <div class="placeholder-img" style="width: 100%; height: 100%;">
-                            <i class="fas fa-cake-candles" style="font-size: 48px;"></i>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Tartas (centro) -->
-                <div class="col-md-3 text-center mb-4">
-                    <div class="product-circle" style="background-color: #b8d8e8; width: 200px; height: 200px;">
-                        <div class="placeholder-img" style="width: 100%; height: 100%; background: linear-gradient(to bottom, #b8d8e8, #e8f4f8);">
-                            <i class="fas fa-birthday-cake" style="font-size: 64px; color: #fff;"></i>
-                        </div>
-                    </div>
-                    <div class="product-label mt-3">tartas</div>
-                </div>
-                
-                <!-- Chocolate -->
-                <div class="col-md-3 text-center mb-4">
-                    <div class="product-circle">
-                        <div class="placeholder-img" style="width: 100%; height: 100%; background: linear-gradient(135deg, #8b4513, #654321);">
-                            <i class="fas fa-cookie-bite" style="font-size: 48px;"></i>
-                        </div>
-                    </div>
-                    <div class="product-label mt-3">chocolate</div>
-                </div>
-                
-            </div>
-            
-            <div class="row justify-content-center mt-4">
-                <!-- Pies -->
-                <div class="col-md-3 text-center">
-                    <div class="product-circle" style="background-color: #f5d0a9;">
-                        <div class="placeholder-img" style="width: 100%; height: 100%; background: linear-gradient(135deg, #f5d0a9, #f9e4c8);">
-                            <i class="fas fa-pie" style="font-size: 48px; color: #fff;"></i>
-                        </div>
-                    </div>
-                    <div class="product-label mt-3">pies</div>
-                </div>
-            </div>
         </div>
     </div>
     
-    <!-- Sección Info Tarté -->
-    <div class="info-section">
+    <!-- Contenedor Principal: Productos a la izquierda, Info a la derecha -->
+    <div class="main-content-section">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-8 offset-md-2">
-                    <h2 class="info-title">Tarté</h2>
-                    <p class="info-text">
-                        ¡Bienvenido al paraíso del azúcar. Aquí las tartas no son solo postres son una experiencia! Y para que tu evento o fiesta sea único. Colores, sabores y mucha creatividad en cada bocado. ¿Listo para tu dosis de dulzura?
-                    </p>
+            <div class="row">
+                <!-- Sección de Productos (Izquierda) -->
+                <div class="col-lg-6">
+                    <div class="products-section">
+                        <div class="container">
+                            <div class="row">
+                                
+                                <!-- Blueberry Cheesecake -->
+                                <div class="col-md-3 text-center mb-4">
+                                    
+                                    <div class="product-label">blueberry<br>cheesecake</div>
+                                    <div class="product-circle">
+                                        <div class="placeholder-img" style="width: 100%; height: 100%;">
+                                            <img src="./images/blueberry.png" alt="Blueberry Cheesecake" style="width: 100%; height: 100%; object-fit: cover;">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Chocolate -->
+                                <div class="col-md-3 text-center mb-4">
+                                    <div class="product-circle">
+                                        <div class="placeholder-img" style="width: 100%; height: 100%;">
+                                            <img src="./images/chocolate.png" alt="Chocolate" style="width: 100%; height: 100%; object-fit: cover;">
+                                        </div>
+                                    </div>
+                                    <div class="product-label mt-3">chocolate</div>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="row mt-4 align-items-center justify-content-center">
+                                <!-- Pies -->
+                                <div class="col-md-6 text-center">
+                                    <div class="product-circle" style="width: 220px; height: 220px; margin: 0 auto 15px;">
+                                        <div class="placeholder-img" style="width: 100%; height: 100%;">
+                                            <img src="./images/pies.png" alt="Pies" style="width: 100%; height: 100%; object-fit: cover;">
+                                        </div>
+                                    </div>
+                                    <div class="product-label mt-3">pies</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sección Info Tarté (Derecha) -->
+                <div class="col-lg-6">
+                    <div class="info-section">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-md-12">
+                                    <h2 class="info-title">Tarté</h2>
+                                    <p class="info-text">
+                                        ¡Bienvenido al paraíso del azúcar. Aquí las tartas no son solo postres son una experiencia! Y para que tu evento o fiesta sea único. Colores, sabores y mucha creatividad en cada bocado. ¿Listo para tu dosis de dulzura?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -133,15 +131,8 @@
         </div>
         
         <!-- Rolling Pin Image -->
-        <div class="rolling-pin">
-            <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
-                <ellipse cx="30" cy="40" rx="15" ry="30" fill="#d4a574"/>
-                <rect x="45" y="25" width="110" height="30" fill="#e6c89c" rx="15"/>
-                <ellipse cx="155" cy="40" rx="15" ry="30" fill="#d4a574"/>
-                <line x1="25" y1="40" x2="15" y2="40" stroke="#8b6f47" stroke-width="4"/>
-                <line x1="175" y1="40" x2="185" y2="40" stroke="#8b6f47" stroke-width="4"/>
-            </svg>
-        </div>
+        <div class="rolling-pin me-5 mb-5">
+            <img src="./images/rodillo.png" alt="Rolling Pin" style="width: 300px; height: auto;">
     </div>
     
     <!-- Bootstrap JS -->
