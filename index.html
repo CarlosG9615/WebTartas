@@ -29,7 +29,16 @@
     </div>
     <nav class="main-nav">
         <div class="container text-center">
-            <a href="#catalogo">Catálogo</a>
+            <div class="dropdown d-inline-block">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownCatalogo" data-bs-toggle="dropdown" aria-expanded="false">
+                    Catálogo
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownCatalogo">
+                    <li><a class="dropdown-item" href="#">Tartés</a></li>
+                    <li><a class="dropdown-item" href="#">Muffins</a></li>
+                    <li><a class="dropdown-item" href="#">Cookies</a></li>
+                </ul>
+            </div>
             <a href="#personalizar">Personaliza tu tarté!</a>
             <a href="#contacto">Contacto</a>
         </div>
@@ -85,9 +94,26 @@
                             <div class="row align-items-center">
                                 <div class="col-md-12">
                                     <h2 class="info-title">Tarté</h2>
-                                    <p class="info-text">
-                                        ¡Bienvenido al paraíso del azúcar. Aquí las tartas no son solo postres son una experiencia! Y para que tu evento o fiesta sea único. Colores, sabores y mucha creatividad en cada bocado. ¿Listo para tu dosis de dulzura?
-                                    </p>
+                                    <div id="textoInfo">
+                                        <p class="info-text">
+                                            ¡Bienvenido al paraíso del azúcar. Aquí las tartas no son solo postres son una experiencia! Y para que tu evento o fiesta sea único. Colores, sabores y mucha creatividad en cada bocado. ¿Listo para tu dosis de dulzura?
+                                        </p>
+                                        <!-- En el botón manejaremos el video personalizado que hagamos-->
+                                        <button class="btn-more-info mt-3" onclick="mostrarEquipo()">
+                                            Conoce a nuestro equipo
+                                            <i class="fas fa-users"></i>
+                                        </button>
+                                    </div>
+                                    <div id="iframeEquipo" style="display: none;">
+                                        <video width="100%" height="315" style="border-radius: 10px; border: 2px solid #f4b4c4;" controls>
+                                            <source src="./videos/equipo.mp4" type="video/mp4">
+                                            Video no soportado por tu navegador.
+                                        </video>
+                                        <button class="btn-more-info mt-3" onclick="volverTexto()">
+                                            Volver
+                                            <i class="fas fa-arrow-left"></i>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -142,7 +168,7 @@
                             Más Info
                             <i class="fas fa-chevron-down"></i>
                         </button>
-                        <div class="collapse show" id="infoCard">
+                        <div class="collapse" id="infoCard">
                             <div class="card card-info">
                                 <div class="card-body">
                                     <h5 class="card-title">Información de nuestros productos</h5>
@@ -152,7 +178,7 @@
                                     <p class="card-text">Los productos son elaborados con ingredientes de alta calidad y con mucho amor para que disfrutes cada bocado. Todo producto elaborado en nuestra pastelería no tiene aditivos ni conservantes,
                                         tratando de garantizar la frescura y sabor auténtico en cada tarta.
                                     </p>
-                                    <button class="mb-3 btn-more-info btn-pedido">Pide ya tu tarta</button>
+                                    <button class="mb-3 btn-more-info btn-pedido">Pide ya tu tarté</button>
                                 </div>
                             </div>
                         </div>
@@ -161,14 +187,14 @@
             </div>
         </div>
     </div>
-    <div class="cta-section">
+    <div class="cta-section" id="personalizar">
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
                     <p class="cta-text">Para hacer único tu<br>evento, fiesta o antojo</p>
                     <p class="cta-highlight">Personaliza tu tarté!!</p>
-                    <a href="#personalizar" class="btn-info-custom">
-                        Más Info
+                    <a href="#personalizar" class="btn-more-info text-decoration-none">
+                        Personalizar
                         <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -180,5 +206,16 @@
     
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+    
+    <!-- Script para cambiar entre texto e iframe -->
+    <script>
+        function mostrarEquipo() {
+            document.getElementById('textoInfo').style.display = 'none';
+            document.getElementById('iframeEquipo').style.display = 'block';
+        }
+        
+        function volverTexto() {
+            document.getElementById('textoInfo').style.display = 'block';
+            document.getElementById('iframeEquipo').style.display = 'none';
+        }
+    </script>

@@ -44,6 +44,46 @@
         .main-nav a:hover {
             color: var(--pink);
         }
+        
+        .main-nav .dropdown-toggle {
+            color: var(--peach);
+            text-decoration: none;
+            margin: 0 25px;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        
+        .main-nav .dropdown-toggle:hover {
+            color: var(--pink);
+        }
+        
+        .main-nav .dropdown-menu {
+            background-color: white;
+            border: 2px solid var(--pink);
+            border-radius: 8px;
+            margin-top: 5px;
+            padding: 0;
+            min-width: 150px;
+        }
+        
+        .main-nav .dropdown-item {
+            color: var(--peach);
+            padding: 10px 20px;
+            transition: background-color 0.2s ease, color 0.2s ease;
+            border: none;
+            margin: 0;
+            background-color: transparent;
+        }
+        
+        .main-nav .dropdown-item:hover,
+        .main-nav .dropdown-item:focus,
+        .main-nav .dropdown-item:active {
+            background-color: var(--light-pink) !important;
+            color: var(--pink) !important;
+            padding: 10px 20px;
+            border: none;
+            margin: 0;
+        }
 
         .logo-section {
             background-color: var(--light-pink);
@@ -243,7 +283,6 @@
             font-size: 14px;
         }
         
-        
         .carousel-section {
             padding: 60px 0;
             background-color: var(--light-pink);
@@ -329,7 +368,6 @@
             background-color: var(--peach);
         }
         
-        /* Botón Más Info */
         .btn-more-info {
             background-color: #d9647c;
             color: white;
@@ -354,7 +392,12 @@
             color: white;
         }
         
-        /* Card de información */
+        #textoInfo .btn-more-info {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
         .card-info {
             background-color: white;
             border: 2px solid #d9647c;
@@ -384,15 +427,152 @@
             line-height: 1.6;
         }
         
-        /* Contenedor de información */
         .info-container {
             position: relative;
             z-index: 10;
         }
         
-        /* Botón de pedido alineado a la derecha */
         .btn-pedido {
             display: flex !important;
             margin-left: auto !important;
             margin-right: 0 !important;
+        }
+
+        @media (max-width: 768px) {
+            .top-header .col-md-6 {
+                width: 50%;
+                flex: 0 0 50%;
+            }
+            
+            .top-header .col-md-6:first-child {
+                text-align: left !important;
+            }
+            
+            .top-header .col-md-6:last-child {
+                text-align: right !important;
+            }
+            
+            .top-header a {
+                margin: 0 5px;
+                font-size: 11px;
+                display: inline-block;
+            }
+            
+            .top-header i {
+                margin-right: 3px;
+            }
+            
+            .main-nav a {
+                margin: 0 10px;
+                font-size: 14px;
+            }
+            
+            .main-nav .dropdown-toggle {
+                margin: 0 10px;
+                font-size: 14px;
+            }
+            
+            .logo-circle {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .logo-circle img {
+                width: 120px;
+            }
+            
+
+            .product-circle {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .products-section .row {
+                gap: 20px;
+                justify-content: center;
+            }
+
+            .info-title {
+                font-size: 36px;
+                text-align: center;
+            }
+            
+            .info-text {
+                font-size: 16px;
+            }
+            
+            .carousel-title {
+                font-size: 28px;
+            }
+            
+
+            .carousel-section .carousel {
+                max-width: 100%;
+            }
+            
+            .carousel-inner {
+                height: 300px;
+            }
+            
+            .info-container {
+                margin-top: 20px;
+            }
+
+            .cta-text {
+                font-size: 20px;
+                text-align: center;
+            }
+            
+            .cta-highlight {
+                font-size: 24px;
+                text-align: center;
+            }
+            
+            .rolling-pin {
+                display: none;
+            }
+            
+            .cta-section .row {
+                text-align: center;
+            }
+            
+            .cta-section .col-md-8 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        
+        @media (max-width: 576px) {
+
+            .logo-circle {
+                width: 120px;
+                height: 120px;
+            }
+            
+            .logo-circle img {
+                width: 100px;
+            }
+            
+            .product-circle {
+                width: 120px;
+                height: 120px;
+            }
+            
+            .carousel-inner {
+                height: 250px;
+            }
+            
+            .info-title {
+                font-size: 28px;
+            }
+            
+            .carousel-title {
+                font-size: 24px;
+            }
+            
+            .btn-more-info {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
         }
