@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarté - Contacto</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --pink: #f4b4c4;
+            --light-pink: #fde8ec;
+            --cream: #fffbe6;
+            --peach: #f5a287;
+            --dark-pink: #c4738d;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+        }
+        
+        /* Header superior */
+        .top-header {
+            background-color: var(--cream);
+            padding: 10px 0;
+            border-bottom: 2px solid var(--pink);
+        }
+        
+        .top-header a {
+            color: var(--peach);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+        }
+        
+        .top-header i {
+            margin-right: 5px;
+        }
+        
+        /* Logo section con cuadros */
+        .logo-section {
+            background-color: var(--light-pink);
+            padding: 40px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                linear-gradient(45deg, white 25%, transparent 25%), 
+                linear-gradient(-45deg, white 25%, transparent 25%), 
+                linear-gradient(45deg, transparent 75%, white 75%), 
+                linear-gradient(-45deg, transparent 75%, white 75%);
+            background-size: 60px 60px;
+            background-position: 0 0, 0 30px, 30px -30px, -30px 0px;
+            pointer-events: none;
+            opacity: 0.3;
+        }
+
+        .logo-circle {
+             width: 220px;
+            height: 220px;
+            background-color: #fff9b8;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .logo-circle img {
+            width: 250px;
+            height: auto;
+            border-radius: 100px;
+          
+        }
+        
+        /* Sección de contacto */
+        .contact-section {
+            background-color: var(--cream);
+            padding: 60px 0;
+        }
+
+        .map-title {
+            color: var(--dark-pink);
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .map-container {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Formulario circular */
+        .form-circle {
+            background-color: var(--dark-pink);
+            border-radius: 50%;
+            width: 350px;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            margin-left: auto;
+        }
+
+        .form-title {
+            color: var(--cream);
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .custom-input {
+            background-color: var(--cream);
+            border: none;
+            margin-bottom: 15px;
+            border-radius: 20px;
+            padding: 10px 15px;
+            width: 100%;
+        }
+
+        .custom-input::placeholder {
+            color: var(--dark-pink);
+        }
+
+        /* Footer */
+        .footer-section {
+            background-color: var(--light-pink);
+            padding: 40px 0 20px;
+        }
+
+        .footer-title {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .footer-text {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .subscribe-text {
+            color: #333;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        .social-icons a {
+            color: var(--dark-pink);
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .copyright {
+            color: #666;
+            font-size: 12px;
+            margin: 15px 0 10px;
+        }
+
+        .legal-links a {
+            color: #333;
+            font-size: 12px;
+            text-decoration: none;
+        }
+
+        .legal-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Header Superior -->
+    <div class="top-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <a href="#"><i class="fas fa-user"></i>Mi cuenta</a>
+                    <a href="#"><i class="fas fa-shopping-cart"></i>Mis pedidos</a>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="tel:918776857"><i class="fas fa-phone"></i>918776857</a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Logo con fondo de cuadros -->
+    <div class="logo-section">
+        <div class="logo-circle">
+            <img src="logotarte.png" alt="Logo Tarté">
+        </div>
+    </div>
+
+    <!-- Sección principal de contacto -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Columna del mapa -->
+                <div class="col-md-6">
+                    <h2 class="map-title">¿Dónde estamos ?</h2>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48548.27594499772!2d-3.4017045!3d40.4818562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd424a4612c4ec6d%3A0x8e8e1ef3c2d4e1a8!2sAlcal%C3%A1%20de%20Henares%2C%20Madrid!5e0!3m2!1ses!2ses!4v1699999999999!5m2!1ses!2ses" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0; border-radius: 10px;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+                
+                <!-- Columna del formulario -->
+                <div class="col-md-6">
+                    <div class="form-circle">
+                        <h2 class="form-title">Contáctanos !!</h2>
+                        <form>
+                            <input type="email" class="form-control custom-input" placeholder="Email">
+                            <textarea class="form-control custom-input" placeholder="Comentarios" rows="4"></textarea>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <!-- Columna dirección -->
+                <div class="col-md-4">
+                    <p class="footer-title">Dirección</p>
+                    <p class="footer-text">Espartales Nº 4<br>Calle Pío Baroja</p>
+                    
+                    <p class="footer-title">Horario:</p>
+                    <p class="footer-text">
+                        De lunes a viernes: De 10:30 h a 14:00 h Jueves y viernes: De 1 
+                        Sábado y domingo: CERRADO Del 11 al 17 de agosto (ambos inclusive) 
+                        CERRADO POR VACACIONES
+                    </p>
+                </div>
+                
+                <!-- Columna central -->
+                <div class="col-md-4 text-center">
+                    <p class="subscribe-text">¡Suscríbete! 10% dto en tu primera compra</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fas fa-phone"></i></a>
+                    </div>
+                    <p class="copyright">©2001-2025 Todos los derechos reservados</p>
+                    <div class="legal-links">
+                        <a href="#">Privacidad</a> |
+                        <a href="#">Condiciones</a> |
+                        <a href="#">Normativa</a> |
+                        <a href="#">Preferencias de cookies</a>
+                    </div>
+                </div>
+                
+                <!-- Columna vacía para equilibrar -->
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
