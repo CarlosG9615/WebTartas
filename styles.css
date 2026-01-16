@@ -10,7 +10,6 @@
             background: white;
         }
         
-        /* Header superior */
         .top-header {
             background-color: var(--cream);
             padding: 10px 0;
@@ -28,7 +27,6 @@
             margin-right: 5px;
         }
         
-        /* Navegación principal */
         .main-nav {
             background-color: white;
             padding: 15px 0;
@@ -46,8 +44,7 @@
         .main-nav a:hover {
             color: var(--pink);
         }
-        
-        /* Logo central */
+
         .logo-section {
             background-color: var(--light-pink);
             padding: 40px 0;
@@ -98,7 +95,6 @@
             font-family: 'Comic Sans MS', cursive;
         }
         
-        /* Sección de productos */
         .products-section {
             padding: 60px 0;
             background-color: white;
@@ -144,7 +140,6 @@
             display: block;
         }
         
-        /* Sección Tarté info */
         .info-section {
             padding: 60px 0;
             background-color: white;
@@ -192,7 +187,6 @@
             text-align: center;
         }
         
-        /* Sección CTA */
         .cta-section {
             background-color: var(--cream);
             padding: 80px 0;
@@ -240,7 +234,6 @@
             transform: rotate(-15deg);
         }
         
-        /* Placeholders para imágenes */
         .placeholder-img {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             display: flex;
@@ -248,4 +241,158 @@
             justify-content: center;
             color: white;
             font-size: 14px;
+        }
+        
+        
+        .carousel-section {
+            padding: 60px 0;
+            background-color: var(--light-pink);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .carousel-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                linear-gradient(45deg, white 25%, transparent 25%),
+                linear-gradient(-45deg, white 25%, transparent 25%),
+                linear-gradient(45deg, transparent 75%, white 75%),
+                linear-gradient(-45deg, transparent 75%, white 75%);
+            background-size: 60px 60px;
+            background-position: 0 0, 0 30px, 30px -30px, -30px 0px;
+            pointer-events: none;
+            opacity: 0.3;
+        }
+        
+        .carousel-title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            color: var(--peach);
+            margin-bottom: 40px;
+            font-family: 'Comic Sans MS', cursive;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .carousel-section .carousel {
+            max-width: 500px;
+            width: 100%;
+            margin: 0 auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            position: relative;
+            z-index: 10;
+        }
+        
+        .carousel-inner {
+            height: 400px;
+        }
+        
+        .carousel-item {
+            height: 100%;
+        }
+        
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: var(--peach);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+        }
+        
+        .carousel-indicators {
+            margin-bottom: 15px;
+        }
+        
+        .carousel-indicators button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--pink);
+            border: none;
+        }
+        
+        .carousel-indicators button.active {
+            background-color: var(--peach);
+        }
+        
+        /* Botón Más Info */
+        .btn-more-info {
+            background-color: #d9647c;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: background-color 0.3s ease;
+            position: relative;
+            z-index: 10;
+            width: fit-content;
+        }
+        
+        .btn-more-info:hover {
+            background-color: #c4536a;
+            color: white;
+        }
+        
+        /* Card de información */
+        .card-info {
+            background-color: white;
+            border: 2px solid #d9647c;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(217, 100, 124, 0.25), 0 5px 15px rgba(0,0,0,0.15);
+            position: relative;
+            z-index: 10;
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        
+        .card-info:hover {
+            box-shadow: 0 15px 40px rgba(217, 100, 124, 0.35), 0 8px 20px rgba(0,0,0,0.2);
+            transform: translateY(-10px);
+        }
+        
+        .card-info .card-title {
+            color: #d9647c;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .card-info .card-text {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        /* Contenedor de información */
+        .info-container {
+            position: relative;
+            z-index: 10;
+        }
+        
+        /* Botón de pedido alineado a la derecha */
+        .btn-pedido {
+            display: flex !important;
+            margin-left: auto !important;
+            margin-right: 0 !important;
         }
